@@ -29,6 +29,7 @@
     <![endif]-->
   </head>
 
+
   <body role="document">
 
     <!-- Fixed navbar -->
@@ -55,72 +56,37 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    
-    <div class="container theme-showcase" role="main">
 
-     
-      <div class="page-header">
-        <h1>국내 포커 랭킹</h1>
+  
+    <form class="form-signin">
+      <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-normal">프로필 등록</h1>
+        <p>프로필을 등록하기 카카오톡을 연동해주세요.
+        </p>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <table class="table">
-            <thead>
-             
-                <tr>
-                   <th>랭킹</th>
-                   <th>사진</th>
-                   <th>이름</th>
-                   <th>점수</th>
-                   
-                   
-                </tr>
-          
-                <tr>
-                   <td>#1</td>
-                   <td><img src="https://i.imgur.com/LEALZ4f.jpg" alt="" /></td>
-                   <td>홍길동</td>
-                   <td>1,000,000pt</td>
-                   
-                </tr>
-          
-                <tr>
-                 <td>#2</td>
-                 <td><img src="https://i.imgur.com/z9AVPRi.jpg" alt="" /></td>
-                 <td>둘리</td>
-                 <td>900,000pt</td>
-                 
-              </tr>
-              <tr>
-                 <td>#3</td>
-                 <td><img src="https://i.imgur.com/7sy8yrg.jpg" alt="" /></td>
-                 <td>희동이</td>
-                 <td>800,000pt</td>
-                 
-              </tr
-              ><tr>
-                 <td>#4</td>
-                 <td><img src="https://i.imgur.com/URir6S7.jpg" alt="" /></td>
-                 <td>짱구</td>
-                 <td>700,000pt</td>
-                 
-              </tr>
-              <tr>
-                 <td>#5</td>
-                 <td><img src="https://i.imgur.com/URir6S7.jpg" alt="" /></td>
-                 <td>훈이</td>
-                 <td>600,000pt</td>
-                 
-              </tr>
-              
-             
-              
-            
-            </tbody>
-          </table>
-      
     
-    <!-- Bootstrap core JavaScript
+      <div class="form-label-group">
+        <input type="text" id="name" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputEmail">이름, 성함</label>
+      </div>
+    
+      <div class="form-label-group">
+        <input type="text" id="inputPassword" class="form-control" placeholder="Password" required>
+        <label for="inputPassword">사진, 이미지</label>
+      </div>
+    
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2020</p>
+    </form>
+      
+      
+
+     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
