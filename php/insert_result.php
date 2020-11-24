@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>포커크루</title>
+    <title>포커크루-토너먼트 결과 공유</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css\bootstrap.min.css" rel="stylesheet">
@@ -28,9 +28,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-
-
-  <body role="document">
+<body role="document">
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -56,33 +54,32 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+    <!--/php 등록 -->
+<?php
+header("Content-Type: text/html; charset=utf-8");
+$day = $_POST['day'];
+$time = $_POST['time'];
+$buyin = $_POST['buyin'];
+$place = $_POST['place'];
+$type = $_POST['type'];
 
-  
+echo "<p class='title'> <b>토너먼트 정보 등록 종료</b> - $id</p> " ;
+echo "아래와 같은 정보를 가진 정보로 등록되었습니다.. <br/>";
+echo "<br/>";
+echo "&nbsp; &nbsp; &nbsp;   사용자ID : $id <br/>";
+echo "&nbsp; &nbsp; &nbsp;   사용자명 : $name <br/>";
+echo "&nbsp; &nbsp; &nbsp;   비밀번호 : $pass <br/>";
+echo "<p class='title'> &nbsp; &nbsp; &nbsp;  </p> <br/> " ;
+$conn = mysqli_connect('localhost:3307', 'root', '965796', 'education');
+$sql = "insert into member(id, pass, name)" . "values('$id', '$pass', '$name')";
+$result = mysqli_query($conn, $sql);
+?>
 
 
-     
-    <form action="insert_result.php" method="POST">
-      <p>날짜:<input type="post" name="day" placeholder="ex:2020-01-01"></p>
-      </br>
-      <p>시간:<input type="post" name="time" placeholder="ex:20:30"></p>
-      </br>
-      <p>참가 조건:<textarea name="buyin" placeholder="ex:티켓 4매 or Free roll or 개별 문의(연락처)"></textarea></p>
-      </br>
-      <p>장소:<textarea name="place" placeholder="ex:대전 대덕구 220(3층) 포커크루"></textarea></p>
-      </br>
-      <p>게임 종류:<input type="post" name="type" placeholder="ex:NLH or PLH or 7Stud"></p>
-      </br>
-      <p>개런티:<input type="post" name="gtd" placeholder="ex:10,000,000 GTD"></p>
-      </br>
-      <p>스트럭쳐<textarea name="structure" placeholder="10,000 chips / 20min up"></textarea></p>
-      </br>
-      
-      <p><input type="submit"></p></p>
-    </form>
-      
-      
 
-     <!-- Bootstrap core JavaScript
+
+
+ <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

@@ -60,26 +60,10 @@
   
 
 
-     
-    <form action="insert_result.php" method="POST">
-      <p>날짜:<input type="post" name="day" placeholder="ex:2020-01-01"></p>
-      </br>
-      <p>시간:<input type="post" name="time" placeholder="ex:20:30"></p>
-      </br>
-      <p>참가 조건:<textarea name="buyin" placeholder="ex:티켓 4매 or Free roll or 개별 문의(연락처)"></textarea></p>
-      </br>
-      <p>장소:<textarea name="place" placeholder="ex:대전 대덕구 220(3층) 포커크루"></textarea></p>
-      </br>
-      <p>게임 종류:<input type="post" name="type" placeholder="ex:NLH or PLH or 7Stud"></p>
-      </br>
-      <p>개런티:<input type="post" name="gtd" placeholder="ex:10,000,000 GTD"></p>
-      </br>
-      <p>스트럭쳐<textarea name="structure" placeholder="10,000 chips / 20min up"></textarea></p>
-      </br>
-      
-      <p><input type="submit"></p></p>
-    </form>
-      
+      <p class="center">
+        
+        <button type="button" class="btn btn-lg btn-primary">
+        <a href="insert.php">시작하기</a></button>
       
 
      <!-- Bootstrap core JavaScript
@@ -90,6 +74,7 @@
     <script src="js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-   
   </body>
-  </html>
+</html>
+
+   
